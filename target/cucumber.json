@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-01-07T00:05:53.117Z",
+        "start_timestamp": "2022-01-07T17:50:08.618Z",
         "line": 4,
         "name": "Login as a librarian",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16750000000,
+              "duration": 11478000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 462000000,
+              "duration": 1305000000,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 548000000,
+              "duration": 4300000000,
               "status": "passed"
             },
             "line": 7,
@@ -46,6 +46,63 @@
               "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.dashboard_should_be_displayed()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@lib"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-07T17:50:26.099Z",
+        "line": 9,
+        "name": "Login as a librarian",
+        "description": "",
+        "id": "login;login-as-a-librarian",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6495000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1686000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I login as a student",
+            "match": {
+              "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.iLoginAsAStudent()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2051000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "books should be displayed",
+            "match": {
+              "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.booksShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@stud"
           }
         ]
       }
