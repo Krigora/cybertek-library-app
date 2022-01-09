@@ -1,4 +1,5 @@
-Feature: Login
+@smoke
+Feature:  Login
   As I user, I should be able to login
 @lib
   Scenario: Login as a librarian

@@ -1,22 +1,22 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-01-08T23:19:32.175Z",
-        "line": 3,
-        "name": "Login as librarian 60",
+        "start_timestamp": "2022-01-09T22:20:43.410Z",
+        "line": 5,
+        "name": "Login as a librarian",
         "description": "",
-        "id": "login-with-parameters;login-as-librarian-60",
+        "id": "login;login-as-a-librarian",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 16027000000,
+              "duration": 4609000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 6,
             "name": "I am on the login page",
             "match": {
               "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
@@ -25,10 +25,140 @@
           },
           {
             "result": {
-              "duration": 208000000,
+              "duration": 764000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I login as a librarian",
+            "match": {
+              "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.i_login_as_a_librarian()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1593000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "dashboard should be displayed",
+            "match": {
+              "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.dashboard_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@lib"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-09T22:20:50.431Z",
+        "line": 10,
+        "name": "Login as a librarian",
+        "description": "",
+        "id": "login;login-as-a-librarian",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3534000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 914000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I login as a student",
+            "match": {
+              "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.iLoginAsAStudent()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2162000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "books should be displayed",
+            "match": {
+              "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.booksShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@stud"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As I user, I should be able to login",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-09T22:20:43.426Z",
+        "line": 4,
+        "name": "Login as librarian 60",
+        "description": "",
+        "id": "login-with-parameters;login-as-librarian-60",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6093000000,
               "status": "passed"
             },
             "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 232000000,
+              "status": "passed"
+            },
+            "line": 6,
             "name": "I enter username \"librarian60@library\"",
             "match": {
               "arguments": [
@@ -43,10 +173,10 @@
           },
           {
             "result": {
-              "duration": 463000000,
+              "duration": 183000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I enter password \u0027OoNKtPqP\u0027",
             "match": {
               "arguments": [
@@ -61,10 +191,10 @@
           },
           {
             "result": {
-              "duration": 250000000,
+              "duration": 101000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "click the sign in button",
             "match": {
               "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.click_the_sign_in_button()"
@@ -73,10 +203,10 @@
           },
           {
             "result": {
-              "duration": 1237000000,
+              "duration": 586000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "there should be 7355 users",
             "match": {
               "arguments": [
@@ -91,10 +221,10 @@
           },
           {
             "result": {
-              "duration": 5279000000,
+              "duration": 894000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "dashboard should be displayed",
             "match": {
               "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.dashboard_should_be_displayed()"
@@ -104,13 +234,16 @@
         ],
         "tags": [
           {
+            "name": "@smoke"
+          },
+          {
             "name": "@libPar"
           }
         ]
       },
       {
-        "start_timestamp": "2022-01-08T23:19:56.038Z",
-        "line": 13,
+        "start_timestamp": "2022-01-09T22:20:51.536Z",
+        "line": 14,
         "name": "Login as student 24",
         "description": "",
         "id": "login-with-parameters;login-as-student-24",
@@ -119,10 +252,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6010000000,
+              "duration": 4643000000,
               "status": "passed"
             },
-            "line": 14,
+            "line": 15,
             "name": "I am on the login page",
             "match": {
               "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.i_am_on_the_login_page()"
@@ -131,10 +264,10 @@
           },
           {
             "result": {
-              "duration": 438000000,
+              "duration": 227000000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 16,
             "name": "I enter username \"student24@library\"",
             "match": {
               "arguments": [
@@ -149,10 +282,10 @@
           },
           {
             "result": {
-              "duration": 262000000,
+              "duration": 163000000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 17,
             "name": "I enter password \u0027ya2nTtvY\u0027",
             "match": {
               "arguments": [
@@ -167,10 +300,10 @@
           },
           {
             "result": {
-              "duration": 255000000,
+              "duration": 102000000,
               "status": "passed"
             },
-            "line": 17,
+            "line": 18,
             "name": "click the sign in button",
             "match": {
               "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.click_the_sign_in_button()"
@@ -179,10 +312,10 @@
           },
           {
             "result": {
-              "duration": 3878000000,
+              "duration": 1539000000,
               "status": "passed"
             },
-            "line": 18,
+            "line": 19,
             "name": "books should be displayed",
             "match": {
               "location": "com.cybertec.library.step_definitions.Login_StepDefinitions.booksShouldBeDisplayed()"
@@ -191,6 +324,9 @@
           }
         ],
         "tags": [
+          {
+            "name": "@smoke"
+          },
           {
             "name": "@StudPar"
           }
@@ -202,6 +338,15 @@
     "id": "login-with-parameters",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/LoginWithParameters.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
