@@ -18,3 +18,10 @@ Feature: Login with parameters
     And click the sign in button
     Then books should be displayed
 #number can be whatever you have there
+
+  Scenario: Login as librarian same line
+    Given I am on the login page
+    When I login using "librarian60@library" and "OoNKtPqP"
+    And there should be 7355 users
+    Then dashboard should be displayed
+#number can be whatever you have there

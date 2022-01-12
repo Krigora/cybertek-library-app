@@ -100,5 +100,11 @@ public class Login_StepDefinitions {
     }
 
 
-}
+    @When("I login using {string} and {string}")
+    public void iLoginUsingAnd(String username, String password ) {
 
+        loginPage.usernameInput.sendKeys(username);
+        loginPage.passwordInput.sendKeys(password);
+        loginPage.singInButton.click();
+    }
+}
