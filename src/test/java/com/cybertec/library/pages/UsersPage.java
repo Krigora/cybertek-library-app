@@ -5,11 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LandingPage extends PageBase{
-    public  LandingPage(){
+public class UsersPage {
+
+    public UsersPage(){
+
         PageFactory.initElements(Driver.getDriver(), this);
 
     }
-    @FindBy(id = "user_count")
-    public WebElement userCont;
+    @FindBy(name = "tbl_users_length")
+    public WebElement showRecordsDropdown;
+
 }
