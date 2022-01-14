@@ -10,7 +10,7 @@ public abstract class PageBase {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(linkText = "Users")
+    @FindBy(xpath = "//span[.='Users']")
 public WebElement usersPageLink;
 
     @FindBy(linkText = "Books")
@@ -18,4 +18,7 @@ public WebElement usersPageLink;
 
     @FindBy(linkText = "Dashboard")
     public WebElement dashboardPageLink;
+
+    @FindBy(xpath = "//a[@id='navbarDropdown']/span")
+    public  WebElement accountUsername;
 }

@@ -1,6 +1,8 @@
+
+@smoke @ur
 Feature: Show records functionality
 
-@wip
+@show
 Scenario: verify default values in Users page
   Given I am on the login page
   And I login as a librarian
